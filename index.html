@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title> Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Img/logo.png" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#">Skills<span class="cs">Coming Soon</span></a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Aspiring Web Developer</p>
+                <h1>Hi, I am <span>Sayef.</span><br> Welcome to my site!</h1>
+            </div>
+        </div>
+
+    </div>
+    <!---------- about ---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Img/bgpic2_resize.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I would describe myself as a detail-oriented, process-driven individual and having a
+problem-solving nature. Though my professional experiences thus far have been
+administrative and customer service focused, I have been keen to pursue my passion for
+technology and have taken strides to develop myself. Using online resources, I have
+learnt the fundamentals of front-end technologies, such as HTML, CSS, and JavaScript.
+To consolidate this learning, I have built projects such as a portfolio, a gallery website,
+and a calculator application amongst others. In 2019 I pursued a computing degree to
+develop a more rounded, intricate understanding of programming and computer science
+principles. Although I was forced to withdraw from the programme, due to circumstances
+relating to the Covid19 pandemic I developed skills in various technologies, such as
+Python and Java, and gained exposure to data analytics, algorithms, OOP, and
+networking. By the end of the apprenticeship, I would hope to have demonstrated my
+value by being able to write working, bug-free code against specifications and project
+requirements.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Learning')">Learning</p>
+                    </div>
+                    <!--skills-->
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>HTML & CSS</span><br>Designing Web Interfaces</li>
+                            <li><span>JavaScript</span><br>Adding Functionality</li>
+                            <li><span>Python</span><br>Back-End</li>
+                        </ul>
+                    </div>
+                    <!--Experinces-->
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li>
+                                <span>2022</span>
+                                <br>
+                                Qaulity Assurance Technician at Universally Speaking
+                            </li>
+                            <li>
+                                <span>2021</span>
+                                <br>
+                                Customer Service Advisor at Serco
+                            </li>
+                            <li>
+                                <span>2018</span>
+                                <br>
+                                Administrator at the NHS
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Learning-->
+                    <div class="tab-contents" id="Learning">
+                        <ul>
+                            <li>
+                                <span>2022</span>
+                                <br>
+                                The Odin Project - Foundations > Full Stack JavaScript Pathway
+                            </li>
+                            <li>
+                                <span>2021</span>
+                                <br>
+                                Udemy - Colt Steele's Full-Stack Web Developers Bootcamp
+                            </li>
+                            <li>
+                                <span>2019-2020</span>
+                                <br>
+                                BSc Computing at Birkbeck University of London
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio section-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Img/html1.png">
+                    <div class="layer">
+                        <h3>Coming Soon</h3>
+                        <p>Fully functional website which expands on this one and showcases my coding projects.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Img/js.png">
+                    <div class="layer">
+                        <h3>Coming Soon</h3>
+                        <p>Calculator app and tic-tac-toe game with JavaScript</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Img/python.png">
+                    <div class="layer">
+                        <h3>Coming Soon</h3>
+                        <p>Currency converter application using Python Tkinter module</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Contact section start-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>SayefIslam22@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>07452962966</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
